@@ -1,7 +1,11 @@
 header {
     /* border: 2px solid black; */
     background-color: black;
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     height: 62px;
@@ -60,6 +64,12 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .home:hover img {
+    height: 28px;
+    width: 28px;
+    
   }
   .home img {
     width: 25px;
