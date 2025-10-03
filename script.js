@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setup navigation for artists section
     setupNavigation('.artists', '.artists-wrapper .prev-btn', '.artists-wrapper .next-btn');
     
+    // Setup navigation for albums section
+    setupNavigation('.albums', '.albums-wrapper .prev-btn', '.albums-wrapper .next-btn');
+    
     // Add click handlers for play buttons
     const playButtons = document.querySelectorAll('.play-button');
     playButtons.forEach(button => {
@@ -57,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function() {
             // Add your artist selection functionality here
             console.log('Artist card clicked');
+        });
+    });
+    
+    // Add click handlers for album cards
+    const albumCards = document.querySelectorAll('.album-card');
+    albumCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Add your album selection functionality here
+            console.log('Album card clicked');
         });
     });
 });
