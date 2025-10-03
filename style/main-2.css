@@ -1,6 +1,6 @@
-.trending-songs-playlist {
+.popular-artists-playlist {
     position: relative;
-    padding: 16px 24px;
+    /* padding: 16px 24px; */
     width: 100%;
     z-index: 1;
 }
@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding: 5px 15px;
 }
 
 .playlist-header h1 {
@@ -24,20 +25,20 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
 }
 
 .show-all:hover {
     color: #ffffff;
 }
 
-.songs-wrapper {
+.artists-wrapper {
     position: relative;
     overflow: hidden;
     margin: 0 -24px;
 }
 
-.songs {
+.artists {
     display: flex;
     gap: 24px;
     padding: 0 24px;
@@ -46,83 +47,98 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     /* Gradient fade effect on the right edge */
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 50px,
+        black calc(100% - 50px),
+        transparent
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 50px,
+        black calc(100% - 50px),
+        transparent
+    );
 }
 
-.songs::-webkit-scrollbar {
+.artists::-webkit-scrollbar {
     display: none;
 }
 
-.song-card {
-    flex: 0 0 180px;
-    background-color: #181818;
-    padding: 16px;
+.artist-card {
+    flex: 0 0 200px;
+    background-color: transparent;
+    padding: 12px;
     border-radius: 6px;
     position: relative;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    height: fit-content;
 }
 
-.song-card:hover {
+.artist-card:hover {
     background-color: #282828;
 }
 
-.card1 {
+.artist-card .card1 {
     position: relative;
     width: 100%;
     margin-bottom: 16px;
 }
 
-.card1 img {
+.artist-card .card1 img {
     width: 100%;
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 50%; /* Circular for artists */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-.card2 {
+.artist-card .card2 {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    text-align: center; /* Center text for artists */
 }
 
-.card2 span:first-child {
+.artist-card .card2 span:first-child {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.01em;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.card2 span:last-child {
+.artist-card .card2 span:last-child {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.card2 a {
+.artist-card .card2 a {
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
 }
 
-.card2 a:hover,
-.card2 span:first-child:hover {
+.artist-card .card2 a:hover,
+.artist-card .card2 span:first-child:hover {
     color: #ffffff;
     text-decoration: underline;
 }
 
-.play-button {
+.artist-card .play-button {
     position: absolute;
     right: 8px;
     bottom: 90px;
@@ -140,17 +156,17 @@
     z-index: 2;
 }
 
-.song-card:hover .play-button {
+.artist-card:hover .play-button {
     opacity: 1;
     transform: translateY(0);
 }
 
-.play-button:hover {
+.artist-card .play-button:hover {
     transform: scale(1.04);
     background-color: #1fdf64;
 }
 
-.nav-btn {
+.artists-wrapper .nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -168,25 +184,25 @@
     transition: all 0.2s ease;
 }
 
-.prev-btn {
+.artists-wrapper .prev-btn {
     left: 16px;
 }
 
-.next-btn {
+.artists-wrapper .next-btn {
     right: 16px;
 }
 
-.nav-btn svg {
+.artists-wrapper .nav-btn svg {
     fill: #ffffff;
     width: 16px;
     height: 16px;
 }
 
-.songs-wrapper:hover .nav-btn {
+.artists-wrapper:hover .nav-btn {
     opacity: 1;
 }
 
-.nav-btn:hover {
+.artists-wrapper .nav-btn:hover {
     background-color: rgba(0, 0, 0, 0.9);
     transform: translateY(-50%) scale(1.1);
 }
