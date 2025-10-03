@@ -1,0 +1,212 @@
+/* Footer Styling for Spotify Clone */
+
+footer {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 60px 0 40px 0;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 8px;
+    /* margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px; */
+    bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-section-1 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-top: 2px solid #292929;
+    padding-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex: 1;
+}
+
+.company-section,
+.communities-section,
+.useful-links-section,
+.spotify-plans-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.company-section p,
+.communities-section p,
+.useful-links-section p,
+.spotify-plans-section p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.015em;
+}
+
+.company-section a,
+.communities-section a,
+.useful-links-section a,
+.spotify-plans-section a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.company-section a:hover,
+.communities-section a:hover,
+.useful-links-section a:hover,
+.spotify-plans-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-social-media-links {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.insta,
+.x,
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta a,
+.x a,
+.facebook a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.insta a:hover,
+.x a:hover,
+.facebook a:hover {
+    background-color: #404040;
+    transform: scale(1.1);
+}
+
+.insta img,
+.x img,
+.facebook img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.footer-section-2 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #292929;
+    padding-top: 20px;
+}
+
+.footer-section-2 span {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-links {
+        gap: 60px;
+    }
+    
+    .footer-section-1 {
+        padding: 0 30px;
+    }
+    
+    .footer-section-2 {
+        padding: 30px 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 60px 0 40px 0;
+    }
+    
+    .footer-section-1 {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .company-section,
+    .communities-section,
+    .useful-links-section,
+    .spotify-plans-section {
+        min-width: calc(50% - 20px);
+    }
+    
+    .footer-social-media-links {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .company-section,
+    .communities-section,
+    .useful-links-section,
+    .spotify-plans-section {
+        min-width: 100%;
+    }
+    
+    .footer-section-1 {
+        padding: 0 20px;
+    }
+    
+    .footer-section-2 {
+        padding: 30px 20px 0;
+    }
+
+    .company-section p,
+    .communities-section p,
+    .useful-links-section p,
+    .spotify-plans-section p {
+        font-size: 14px;
+    }
+
+    .company-section a,
+    .communities-section a,
+    .useful-links-section a,
+    .spotify-plans-section a {
+        font-size: 14px;
+    }
+}
