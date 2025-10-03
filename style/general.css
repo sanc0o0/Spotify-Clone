@@ -19,3 +19,7 @@ img {
   cursor: pointer;
   filter: invert(1);
 }
+
+.nofill {
+  filter: none;
+}

@@ -11,6 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/sidebar.css">
     <link rel="stylesheet" href="style/general.css">
 </head>
 
@@ -43,8 +44,13 @@
     <main>
         <section class="sidebar">
             <div class="lib-section">
-                <span>Your Library</span>
-                <img src="svg/add.svg" alt="Add to Library">
+                <div class="lib">
+                    <img src="svg/library.svg" alt="Library">
+                    <span>Your Library</span>
+                </div>
+                <button class="add-btn"><span>
+                        <img class="add-icon" src="svg/add.svg" alt="Add to Library">
+                    </span></button>
             </div>
             <div class="lib-content">
                 <div class="playlist-card">
@@ -94,7 +100,260 @@
                 </div>
             </div>
         </section>
-        <section class="main-content"></section>
+        <section class="main-content">
+            <div class="trending-songs-playlist">
+                <div class="playlist-header">
+                    <h1>Trending Songs</h1>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+                <div class="songs-wrapper">
+                    <button class="nav-btn prev-btn">
+                        <svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                            <path
+                                d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="songs">
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-card">
+                            <div class="card1">
+                                <img src="img/img1.jpeg" class="nofill" alt="song1">
+                            </div>
+                            <div class="card2">
+                                <span>PERFECT (From "Sunny Sanskari ki Tulsi Kumari")</span>
+                                <span>
+                                    <a href="">Guru Randhawa, </a>
+                                    <a href="">Gill Machhrai, </a>
+                                    <a href="">Rony Ajnali, </a>
+                                    <a href="">Dilmaan</a>
+                                </span>
+                            </div>
+                            <div class="play-button">
+                                <svg height="24" width="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-btn next-btn">
+                        <svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                            <path
+                                d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
